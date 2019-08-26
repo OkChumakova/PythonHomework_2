@@ -48,12 +48,12 @@ def computerMove():
         counter +=1
 
     for i in statusOfBoard:
-        if i[0] == 1 and i[2] != -1:
+        if i[1] == 1 and i[2] != -1:
             gameboard[i[2]] = computerRole
             return 0
 
     for i in statusOfBoard:
-        if i[1] == 1 and i[2] != -1:
+        if i[0] == 1 and i[2] != -1:
             gameboard[i[2]] = computerRole
             return 0
 
